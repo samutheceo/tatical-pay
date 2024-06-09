@@ -48,7 +48,7 @@ const Home: React.FC = () => {
             />
             </div>
             <div className='flex flex-col w-fit h-fit text-center items-center justify-center'>
-              <h1 className='font-semibold text-white text-xl'>"samu</h1>
+              <h1 className='font-semibold text-white text-xl'>&quot;samu</h1>
               <h2 className='font-normal text-zinc-100 text-sm'>The Ceo</h2>
             </div>
             <div className='flex flex-wrap gap-x-2'>
@@ -80,7 +80,7 @@ const Home: React.FC = () => {
         </Squircle>
         <footer className='absolute bottom-0 mb-2 text-md text-white flex flex-col items-center justify-center text-center w-full h-fit'>
           <span className='text-zinc-200/80 text-xs'>Tatical Pay</span>
-          <span className='text-zinc-200/50 text-xs'>Designed by "samu, in Italy</span>
+          <span className='text-zinc-200/50 text-xs'>Designed by &quot;samu, in Italy</span>
         </footer>
       </div>
     </div>
