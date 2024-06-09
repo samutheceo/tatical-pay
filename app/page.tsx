@@ -4,6 +4,7 @@ import { Squircle } from '@squircle-js/react';
 import React, { useEffect, useState } from 'react';
 import { BiLogoBitcoin } from "react-icons/bi";
 import { FaPaypal, FaTelegramPlane, FaDiscord } from "react-icons/fa";
+import Image from 'next/image';
 
 const Home: React.FC = () => {
   const [bannerIndex, setBannerIndex] = useState(0);
@@ -29,17 +30,22 @@ const Home: React.FC = () => {
   return (
     <div className="absolute left-0 top-0 w-screen h-[100%] overflow-hidden select-none">
       <div className="w-full h-full z-0 absolute">
-        <img
-          className="w-screen h-screen object-cover"
-          src={banners[bannerIndex]}
-          alt="banner"
-        />
+      <Image
+        src={banners[bannerIndex]}
+        alt=""
+        layout="fill"
+        className="w-screen h-screen object-cover"
+      />
       </div>
       <div className="w-full h-full z-10 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center">
         <Squircle cornerRadius={25} cornerSmoothing={0.6} asChild className='w-fit h-fit px-8 py-4 bg-white/30 backdrop-blur-sm flex flex-col items-center justify-center'>
           <section className='w-fit h-fit flex flex-col items-center justify-center text-center gap-y-2'>
             <div className='rounded-full w-24 h-24 overflow-hidden flex items-center justify-center'>
-              <img className='relative rounded-full w-full h-full' src="/samu.gif"/>
+            <Image
+              src="/samu.gif"
+              alt=""
+              className='relative rounded-full w-full h-full'
+            />
             </div>
             <div className='flex flex-col w-fit h-fit text-center items-center justify-center'>
               <h1 className='font-semibold text-white text-xl'>"samu</h1>
@@ -75,7 +81,6 @@ const Home: React.FC = () => {
         <footer className='absolute bottom-0 mb-2 text-md text-white flex flex-col items-center justify-center text-center w-full h-fit'>
           <span className='text-zinc-200/80 text-xs'>Tatical Pay</span>
           <span className='text-zinc-200/50 text-xs'>Designed by "samu, in Italy</span>
-
         </footer>
       </div>
     </div>
