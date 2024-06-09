@@ -38,7 +38,7 @@ const Home: React.FC = () => {
       />
       </div>
       <div className="w-full h-full z-10 bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center">
-        <Squircle cornerRadius={25} cornerSmoothing={0.6} asChild className='w-fit h-fit px-8 py-4 bg-white/30 backdrop-blur-sm flex flex-col items-center justify-center md:scale-[1] sm:scale-[0.8]'>
+        <Squircle cornerRadius={25} cornerSmoothing={0.6} asChild className='w-fit h-fit px-8 py-4 bg-white/30 backdrop-blur-sm flex flex-col items-center justify-center sm:scale-[0.8]'>
           <section className='w-fit h-fit flex flex-col items-center justify-center text-center gap-y-2'>
             <div className='rounded-full w-24 h-24 overflow-hidden flex items-center justify-center'>
             <Image
